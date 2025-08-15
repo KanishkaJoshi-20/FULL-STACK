@@ -8,65 +8,245 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Go to top">
+        <span class="logo">KJ</span>
+        <span>Kanishka&nbsp;Joshi</span>
+      </a>
+      <div class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-  <header>
-    <h1>Kanishka Joshi</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="pill">Full‑Stack Learner • Open‑Source Contributor</div>
+        <h1>Hi, I'm <span style="background:var(--accent); -webkit-background-clip:text; background-clip:text; color:transparent;">Kanishka Joshi</span></h1>
+        <p class="tag">3rd‑year B.E. IT @ IET DAVV, Indore • Passionate about Web Dev & DSA</p>
+        <div class="cta">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button" href="mailto:joshikanishka24605@gmail.com">Contact Me</a>
+          <a class="button" href="https://github.com/KanishkaJoshi-20/Resume" onclick="alert('Click to View')" aria-label="Resume">Resume</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Contact & quick info">
+        <ul class="info-list">
+          <li>📍 Indore, MP</li>
+          <li>📧 <a href="mailto:joshikanishka24605@gmail.com" style="color:var(--text)">joshikanishka24605@gmail.com</a></li>
+          <li>📱 <a href="tel:+916268242442" style="color:var(--text)">+91 62682 42442</a></li>
+          <li>💻 <a href="https://github.com/KanishkaJoshi-20" target="_blank" rel="noreferrer noopener" style="color:var(--text)">GitHub</a></li>
+          <li>🔗 <a href="https://www.linkedin.com/in/kanishka-joshi-3906a73611" target="_blank" rel="noreferrer noopener" style="color:var(--text)">LinkedIn</a></li>
+        </ul>
+        <div style="height:14px"></div>
+        <div class="row">
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">ReactJs</span>
+        </div>
+      </aside>
+    </div>
   </header>
 
+  <!-- ABOUT -->
   <section id="about">
-    <img src="./img/Screenshot 2025-07-10 144551.png" alt="Kanishka Joshi">
-    <h2>Hello! I'm Kanishka 👋</h2>
-    <p>A passionate Full Stack Learner from IET DAVV Indore, currently in 3rd year (8.02 CGPA). I love coding, open source, and building useful applications.</p>
+    <div class="container">
+      <div class="section-head">
+        <h2>About Me</h2>
+        <p>Who I am & what I do</p>
+      </div>
+      <div class="card">
+        <p>
+          I'm a 3rd‑year B.E. IT student at IET DAVV, Indore, passionate about building clean, responsive web experiences and practicing DSA. I build with <strong>HTML, CSS, JS, and ReactJs</strong> , and I'm exploring backend development using <strong>Node.js, Express.js, and MySQL</strong>. I contribute to open‑source through <strong>GSSoC</strong> and love shipping features, fixing issues, and collaborating via PRs.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>C++</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>React.js</li>
-      <li>MySQL</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
-
+  <!-- PROJECTS -->
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Indore Zoo </h3>
-      <p>A purely HTML based website with interactive features consist of all details of the Indore Zoo</p>
-    </div>
-    <div class="project">
-      <h3>Karnataka-Tourism </h3>
-      <p>A HTML and CSS based clone website with interactive features consist of all details of the Karnataka-Tourism,places to visit and helpline services.</p>
+    <div class="container">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Selected work & open‑source</p>
+      </div>
+
+      <div class="grid cols-3" role="list">
+        <!-- Portfolio Website -->
+        <article class="card" role="listitem">
+          <div class="project-cover" aria-hidden="true"></div>
+          <span class="badge">Frontend</span>
+          <h3>Portfolio Website</h3>
+          <p>A personal portfolio to showcase skills, resume, and projects with a responsive design.</p>
+          <div class="stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="card-actions">
+            <a class="button" href="https://github.com/KanishkaJoshi-20/FULL-STACK/tree/main/Portfolio" target="_blank" rel="noreferrer noopener">GitHub Repo</a>
+          </div>
+        </article>
+
+        <!-- Zoo Web -->
+        <article class="card" role="listitem">
+          <div class="project-cover" aria-hidden="true"></div>
+          <span class="badge">Frontend</span>
+          <h3>Zoo Web</h3>
+          <p>A static, informative, zoo‑themed website using semantic HTML and clean structure.</p>
+          <div class="stack"><span>HTML</span><span>CSS</span></div>
+          <div class="card-actions">
+            <a class="button" href="https://github.com/KanishkaJoshi-20/FULL-STACK/tree/main/Zoo" target="_blank" rel="noreferrer noopener">GitHub Repo</a>
+          </div>
+        </article>
+
+        <!-- Svara Blog -->
+        <article class="card" role="listitem">
+          <div class="project-cover" aria-hidden="true"></div>
+          <span class="badge">Frontend</span>
+          <h3>Svara – Blog Website (In Progress)</h3>
+          <p>Blog platform with hero section, blog cards, scroll features, and responsive UI design.</p>
+          <div class="stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="card-actions">
+            <a class="button" href="https://github.com/KanishkaJoshi-20/svara" target="_blank" rel="noreferrer noopener">GitHub Repo</a>
+          </div>
+        </article>
+
+        <!-- NeoNest contribution -->
+        <article class="card" role="listitem">
+          <div class="project-cover" aria-hidden="true"></div>
+          <span class="badge">Open‑Source</span>
+          <h3>NeoNest – Parenting Resources (GSSoC)</h3>
+          <p>Contributing categorized resources (articles, videos, podcasts) in a Next.js/React app: filters, cards, and accessible UI.</p>
+          <div class="stack"><span>Next.js</span><span>React</span><span>Tailwind</span></div>
+          <div class="card-actions">
+            <a class="button" href="https://github.com/AditiGupta-tech/neonest" target="_blank" rel="noreferrer noopener" onclick="alert('NeoNest repo link Im contributing to!')">Project Link</a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <a href="assets/Kanishka_Joshi_Resume.pdf" download>Download My Resume (PDF)</a>
+  <!-- SKILLS -->
+  <section id="skills">
+    
+    <div class="container">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>Tech I use & learn</p>
+      </div>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">ReactJs</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Postman</div>
+        <div class="skill">C++</div>
+        <div class="skill">Core Java</div>
+        <div class="skill">VS Code</div>
+        <div class="skill">Git</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Leadership & Communication</div>
+      </div>
+    </div>
   </section>
 
+  <!-- EXPERIENCE & CERTIFICATIONS -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head">
+        <h2>Experience & Certifications</h2>
+        <p>Learning by doing</p>
+      </div>
+
+      <div class="timeline">
+        <div class="item">
+          <div class="meta"><span class="dot"></span><strong>Open‑Source Contributor – GirlScript Summer of Code (GSSoC) 2025</strong> • Jul 2025 – Oct 2025</div>
+          <p>Contributing to <strong>NeoNest</strong> – curated parenting resources in a Next.js app. Working on issues, PRs, and community discussions.</p>
+        </div>
+        <div class="item">
+          <div class="meta"><span class="dot"></span><strong>Certification</strong></div>
+          <p><strong>Postman API Fundamentals</strong> – Issued Jul 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-head">
+        <h2>Education</h2>
+        <p>IET DAVV, Indore</p>
+      </div>
+      <div class="card">
+        <p><strong>B.E. in Information Technology</strong> • Sep 2023 – May 2027 • CGPA: <strong>8.02</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:joshikanishka24605@gmail.com">joshikanishka24605@gmail.com</a></p>
-    <p>Phone: <a href="tel:+916268242442">6268242442</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/kanishka-joshi-3906a73611" target="_blank">kanishka-joshi</a></p>
-    <p>GitHub: <a href="https://github.com/KanishkaJoshi-20" target="_blank">KanishkaJoshi-20</a></p>
+    <div class="container">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Let's collaborate</p>
+      </div>
+
+      <div class="contact">
+        <div>
+          <p>I'm open to internship opportunities and open‑source collaboration. The fastest way to reach me is email or LinkedIn.</p>
+          <div class="row">
+            <a class="button" href="mailto:joshikanishka24605@gmail.com">Email</a>
+            <a class="button" href="https://github.com/KanishkaJoshi-20" target="_blank" rel="noreferrer noopener">GitHub</a>
+            <a class="button" href="https://www.linkedin.com/in/kanishka-joshi-3906a73611" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+            <a class="button" href="tel:+916268242442">Call</a>
+          </div>
+        </div>
+        <form class="card" onsubmit="event.preventDefault(); alert('This is a static site. Use mailto / Formspree / Netlify Forms to enable submissions.');">
+          <label class="sr-only" for="name">Name</label>
+          <input id="name" placeholder="Your name" style="width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background:#0e1535; color:var(--text); margin-bottom:10px;" />
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" type="email" placeholder="Your email" style="width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background:#0e1535; color:var(--text); margin-bottom:10px;" />
+          <label class="sr-only" for="msg">Message</label>
+          <textarea id="msg" placeholder="Message" rows="4" style="width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background:#0e1535; color:var(--text);"></textarea>
+          <div style="height:10px"></div>
+          <button class="button primary" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Kanishka Joshi</p>
+    © <span id="y"></span> Kanishka Joshi • Built with HTML, CSS & a bit of JS
   </footer>
 
-  <script src="scriptt.js"></script>
+  <script>
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Simple scroll reveal
+    const revealEls = document.querySelectorAll('.card, .skill, .item, .project-cover');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.animate([
+            { transform: 'translateY(14px)', opacity: .001 },
+            { transform: 'translateY(0)', opacity: 1 }
+          ], { duration: 500, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'forwards' });
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: .12 });
+    revealEls.forEach(el => obs.observe(el));
+  </script>
+  <!-- <script src="scriptt.js"></script> -->
 </body>
 </html>
